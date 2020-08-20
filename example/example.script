@@ -1,0 +1,41 @@
+local function start()
+	tinyfd.beep()
+	tinyfd.notify_popup("Hi", "Notification from Tinyfd", "info")
+	tinyfd.message_box("Hi", "Message from Tinyfd", "ok", "info", 1)
+	print(tinyfd.input_box("Hi", "input some thing and open the log", "qwq"))
+	print(tinyfd.input_box("Hi", "this is the password", nil))
+	print(tinyfd.save_file("Hi", "filename.txt", {"*.txt"}, "Text file"))
+	print(tinyfd.open_file("Hi", "filename.txt", {"*.txt"}, "Text file", 0))
+	print(tinyfd.open_file("Hi", nil, nil, nil, 1))
+	print(tinyfd.select_folder("Hi", nil))
+	print(tinyfd.color_chooser("Hi", "#66CCFF"))
+end
+
+function init(self)
+	start()
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end
