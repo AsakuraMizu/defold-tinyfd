@@ -4,7 +4,7 @@ name: "tinyfd"
 platforms:
     x86_64-win32:
         context:
-            libs: ['Comdlg32', 'Ole32']
+            libs: ['ComDlg32', 'Ole32']
     x86-win32:
         context:
-            libs: ['Comdlg32', 'Ole32']
+            libs: ['ComDlg32', 'Ole32']
